@@ -16,6 +16,19 @@ class Solution:
         print(sorted_by_values)       
         first_value = next(iter(sorted_by_values.keys()))
         return first_value
+###### better solution for hash_map
+# class Solution:
+#     def majorityElement(self, nums: List[int]) -> int:
+#         hash = {}
+#         res = majority = 0
+        
+#         for n in nums:
+#             hash[n] = 1 + hash.get(n, 0)
+#             if hash[n] > majority:
+#                 res = n
+#                 majority = hash[n]
+        
+#         return res
     
 
 ###### check this solution is great unfortunately i didn't think of it thanks to Soumen Maity for his brain
